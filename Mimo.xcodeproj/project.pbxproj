@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F111ED0218764CF008379B8 /* LoadingLessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F111ECF218764CF008379B8 /* LoadingLessonsViewController.swift */; };
+		0F111ED32187772D008379B8 /* LessonStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F111ED12187772D008379B8 /* LessonStorage.xcdatamodeld */; };
 		0FD69AC02183E43000A088B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69ABF2183E43000A088B9 /* AppDelegate.swift */; };
-		0FD69AC22183E43000A088B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69AC12183E43000A088B9 /* ViewController.swift */; };
+		0FD69AC22183E43000A088B9 /* LessonScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69AC12183E43000A088B9 /* LessonScreenViewController.swift */; };
 		0FD69AC52183E43000A088B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD69AC32183E43000A088B9 /* Main.storyboard */; };
 		0FD69AC72183E43200A088B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD69AC62183E43200A088B9 /* Assets.xcassets */; };
 		0FD69ACA2183E43200A088B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FD69AC82183E43200A088B9 /* LaunchScreen.storyboard */; };
 		0FD69AD52183E43300A088B9 /* MimoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69AD42183E43300A088B9 /* MimoTests.swift */; };
 		0FD69AE02183E43300A088B9 /* MimoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69ADF2183E43300A088B9 /* MimoUITests.swift */; };
+		0FD69AEE2183E44300A088B9 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69AED2183E44300A088B9 /* Lessons.swift */; };
+		0FD69AF22183E5D400A088B9 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD69AF12183E5D400A088B9 /* UIColor.swift */; };
+		2D4081047EF7F1A8B852E474 /* Pods_MimoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109C97687240E63F69993258 /* Pods_MimoTests.framework */; };
+		3185CB71D123AD82D9B853C4 /* Pods_Mimo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E83ACB3D74286F0AA635B31F /* Pods_Mimo.framework */; };
+		C334396B3A72A0B5ABD6E8BF /* Pods_MimoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03ED68E2581D42BB893A018B /* Pods_MimoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03ED68E2581D42BB893A018B /* Pods_MimoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DF7EB4610BE376215DB32A0 /* Pods-MimoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoUITests/Pods-MimoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F111ECF218764CF008379B8 /* LoadingLessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingLessonsViewController.swift; sourceTree = "<group>"; };
+		0F111ED22187772D008379B8 /* LessonStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LessonStorage.xcdatamodel; sourceTree = "<group>"; };
 		0FD69ABC2183E43000A088B9 /* Mimo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD69ABF2183E43000A088B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0FD69AC12183E43000A088B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0FD69AC12183E43000A088B9 /* LessonScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonScreenViewController.swift; sourceTree = "<group>"; };
 		0FD69AC42183E43000A088B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FD69AC62183E43200A088B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FD69AC92183E43200A088B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,15 @@
 		0FD69ADB2183E43300A088B9 /* MimoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD69ADF2183E43300A088B9 /* MimoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimoUITests.swift; sourceTree = "<group>"; };
 		0FD69AE12183E43300A088B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FD69AED2183E44300A088B9 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		0FD69AF12183E5D400A088B9 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		109C97687240E63F69993258 /* Pods_MimoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5922E5E838903CEB49AC4440 /* Pods-MimoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoUITests/Pods-MimoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		674AFE558B29187821ECAF9F /* Pods-Mimo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mimo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mimo/Pods-Mimo.debug.xcconfig"; sourceTree = "<group>"; };
+		7141E21CC5C83F9AFB80994E /* Pods-MimoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimoTests/Pods-MimoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		77C3A842590F26FAB3AAF065 /* Pods-MimoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimoTests/Pods-MimoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E83ACB3D74286F0AA635B31F /* Pods_Mimo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mimo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5C6304113EF0115AE1FCC55 /* Pods-Mimo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mimo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mimo/Pods-Mimo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3185CB71D123AD82D9B853C4 /* Pods_Mimo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D4081047EF7F1A8B852E474 /* Pods_MimoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C334396B3A72A0B5ABD6E8BF /* Pods_MimoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +104,8 @@
 				0FD69AD32183E43300A088B9 /* MimoTests */,
 				0FD69ADE2183E43300A088B9 /* MimoUITests */,
 				0FD69ABD2183E43000A088B9 /* Products */,
+				2DA3D25151343C747AF916A9 /* Pods */,
+				EBE684258AA25665158F0D72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +123,14 @@
 			isa = PBXGroup;
 			children = (
 				0FD69ABF2183E43000A088B9 /* AppDelegate.swift */,
-				0FD69AC12183E43000A088B9 /* ViewController.swift */,
+				0F111ECF218764CF008379B8 /* LoadingLessonsViewController.swift */,
+				0FD69AC12183E43000A088B9 /* LessonScreenViewController.swift */,
+				0FD69AED2183E44300A088B9 /* Lessons.swift */,
+				0FD69AF12183E5D400A088B9 /* UIColor.swift */,
+				0F111ED12187772D008379B8 /* LessonStorage.xcdatamodeld */,
 				0FD69AC32183E43000A088B9 /* Main.storyboard */,
-				0FD69AC62183E43200A088B9 /* Assets.xcassets */,
 				0FD69AC82183E43200A088B9 /* LaunchScreen.storyboard */,
+				0FD69AC62183E43200A088B9 /* Assets.xcassets */,
 				0FD69ACB2183E43200A088B9 /* Info.plist */,
 			);
 			path = Mimo;
@@ -125,6 +154,29 @@
 			path = MimoUITests;
 			sourceTree = "<group>";
 		};
+		2DA3D25151343C747AF916A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				674AFE558B29187821ECAF9F /* Pods-Mimo.debug.xcconfig */,
+				F5C6304113EF0115AE1FCC55 /* Pods-Mimo.release.xcconfig */,
+				7141E21CC5C83F9AFB80994E /* Pods-MimoTests.debug.xcconfig */,
+				77C3A842590F26FAB3AAF065 /* Pods-MimoTests.release.xcconfig */,
+				0DF7EB4610BE376215DB32A0 /* Pods-MimoUITests.debug.xcconfig */,
+				5922E5E838903CEB49AC4440 /* Pods-MimoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBE684258AA25665158F0D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E83ACB3D74286F0AA635B31F /* Pods_Mimo.framework */,
+				109C97687240E63F69993258 /* Pods_MimoTests.framework */,
+				03ED68E2581D42BB893A018B /* Pods_MimoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FD69AE42183E43300A088B9 /* Build configuration list for PBXNativeTarget "Mimo" */;
 			buildPhases = (
+				81BA96B47B008C3012315D89 /* [CP] Check Pods Manifest.lock */,
 				0FD69AB82183E43000A088B9 /* Sources */,
 				0FD69AB92183E43000A088B9 /* Frameworks */,
 				0FD69ABA2183E43000A088B9 /* Resources */,
+				B1226D8FF195CAFF6ADD7BE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +203,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FD69AE72183E43300A088B9 /* Build configuration list for PBXNativeTarget "MimoTests" */;
 			buildPhases = (
+				C5D2365EB2744C1CF5836537 /* [CP] Check Pods Manifest.lock */,
 				0FD69ACC2183E43300A088B9 /* Sources */,
 				0FD69ACD2183E43300A088B9 /* Frameworks */,
 				0FD69ACE2183E43300A088B9 /* Resources */,
@@ -167,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FD69AEA2183E43300A088B9 /* Build configuration list for PBXNativeTarget "MimoUITests" */;
 			buildPhases = (
+				EF186831C7F9D1AA9CD6FD8D /* [CP] Check Pods Manifest.lock */,
 				0FD69AD72183E43300A088B9 /* Sources */,
 				0FD69AD82183E43300A088B9 /* Frameworks */,
 				0FD69AD92183E43300A088B9 /* Resources */,
@@ -251,13 +307,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81BA96B47B008C3012315D89 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mimo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1226D8FF195CAFF6ADD7BE2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mimo/Pods-Mimo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mimo/Pods-Mimo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D2365EB2744C1CF5836537 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MimoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF186831C7F9D1AA9CD6FD8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MimoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FD69AB82183E43000A088B9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FD69AC22183E43000A088B9 /* ViewController.swift in Sources */,
+				0FD69AEE2183E44300A088B9 /* Lessons.swift in Sources */,
+				0FD69AC22183E43000A088B9 /* LessonScreenViewController.swift in Sources */,
 				0FD69AC02183E43000A088B9 /* AppDelegate.swift in Sources */,
+				0F111ED32187772D008379B8 /* LessonStorage.xcdatamodeld in Sources */,
+				0F111ED0218764CF008379B8 /* LoadingLessonsViewController.swift in Sources */,
+				0FD69AF22183E5D400A088B9 /* UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +581,7 @@
 		};
 		0FD69AE52183E43300A088B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 674AFE558B29187821ECAF9F /* Pods-Mimo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +600,7 @@
 		};
 		0FD69AE62183E43300A088B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5C6304113EF0115AE1FCC55 /* Pods-Mimo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -466,6 +619,7 @@
 		};
 		0FD69AE82183E43300A088B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7141E21CC5C83F9AFB80994E /* Pods-MimoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +641,7 @@
 		};
 		0FD69AE92183E43300A088B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C3A842590F26FAB3AAF065 /* Pods-MimoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +663,7 @@
 		};
 		0FD69AEB2183E43300A088B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF7EB4610BE376215DB32A0 /* Pods-MimoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +684,7 @@
 		};
 		0FD69AEC2183E43300A088B9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5922E5E838903CEB49AC4440 /* Pods-MimoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +743,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0F111ED12187772D008379B8 /* LessonStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0F111ED22187772D008379B8 /* LessonStorage.xcdatamodel */,
+			);
+			currentVersion = 0F111ED22187772D008379B8 /* LessonStorage.xcdatamodel */;
+			path = LessonStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0FD69AB42183E43000A088B9 /* Project object */;
 }
