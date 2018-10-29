@@ -7,8 +7,7 @@ target 'Mimo' do
 
   # Pods for Mimo
 
-pod 'SwiftyJSON'
-
+Pod 'SwiftyJSON'
 
   target 'MimoTests' do
     inherit! :search_paths

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class LessonScreenViewController: UIViewController {
 
@@ -17,12 +18,10 @@ class LessonScreenViewController: UIViewController {
     @IBOutlet weak var lessonNumberTitle: UILabel!
     @IBOutlet weak var runBtn: UIButton!
     
+    var startTime = Date()
     
     var lessons: [Lesson]!
     var currentLessonIndex = 0
-    
-
-    
     
     @IBOutlet weak var restartBtn: UIButton!
     
@@ -38,7 +37,10 @@ class LessonScreenViewController: UIViewController {
 
     func setupLesson() {
         let lesson = lessons[currentLessonIndex]
-    
+        
+        startTime = Date()
+        
+        
         lessonNumberTitle.text = ("Lesson \(lesson.id - 4)")
         print("Current lesson is: \(lesson)")
         
@@ -72,23 +74,41 @@ class LessonScreenViewController: UIViewController {
     
     @IBAction func gotToNextLesson() {
         currentLessonIndex += 1
+        
+
+        LessonStorageManager.shared.persistentContainer.performBackgroundTask { context in
+            let storage = LessonStorage(context: context)
+            storage.lessonStart = self.startTime as NSDate
+            storage.lessonEnd = NSDate()
+            storage.id = UUID().uuidString
+            do {
+                try context.save()
+            } catch {
+                print("Error saving new session storage: \(error)")
+            }
+        }
+        
+        
         if currentLessonIndex < lessons.count {
             setupLesson()
         } else {
             lessonNumberTitle.text = "No more lessons"
-            restartBtn.isHidden = true
+            restartBtn.isHidden = false
             firstLabel.isHidden = true
             textField.isHidden = true
             seondLabel.isHidden = true
-            runBtn.isEnabled = false
             runBtn.isHidden = true
+            runBtn.isEnabled = false
         }
     }
     
     
     @IBAction func restartBtnPressed(_ sender: Any) {
         // start over
-        
+        currentLessonIndex = 0
+        setupLesson()
+        firstLabel.isHidden = false
+        runBtn.isHidden = false
     }
     
     @objc func textFieldChanged(textField: UITextField) {
